@@ -1,0 +1,19 @@
+<h1>Edit yout product</h1>
+
+<form action="/app/edit" method="post">
+  <input type="hidden" name="id" value="{{product._id}}" />
+  <label for="name">Name:</label>
+  <input type="text" name="name" id="name" value="{{product.name}}" />
+
+  <label for="price">Price:</label>
+  <input type="number" name="price" id="price" value="{{product.price}}" />
+
+  <label for="description">Description:</label>
+  <textarea
+    name="description"
+    id="description"
+  >{{product.description}}</textarea>
+
+  <input type="submit" value="Edit" />
+
+</form>

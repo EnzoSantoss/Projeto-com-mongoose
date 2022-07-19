@@ -1,0 +1,11 @@
+<h1>All the products</h1>
+
+{{#each products}}
+
+  <div class="product-container">
+    <a href="/app/{{this._id}}">name</a>:{{this.name}}
+    price:{{this.price}}
+    description:{{this.description}}
+  </div>
+
+{{/each}}

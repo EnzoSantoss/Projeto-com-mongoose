@@ -1,0 +1,13 @@
+<h1>This is your product</h1>
+
+<h2>Name: {{product.name}}</h2>
+<h3>Price: {{product.price}}</h3>
+<h3>Descrption: {{product.description}}</h3>
+
+<form action="/app/remove/{{product._id}}" method="post">
+  <input type="submit" value="Deletar" />
+</form>
+
+<a href="/app/edit/{{product._id}}">Editar</a>
+
+<a href="/">Voltar</a>
